@@ -33,6 +33,10 @@ class Search extends React.Component{
                            }
                           onKeyDown={this.handleKey}
                     />
+                    <button className="waves-effect waves-light btn search-btn"
+                            onClick={() => this.props.searchMovies(this.state.search)}>
+                        <i className="material-icons left">search</i>Search
+                    </button>
                 </div>
         );
     }

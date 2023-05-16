@@ -22,3 +22,9 @@ nav{
     gap: 2rem;
 }
 
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+}
+
