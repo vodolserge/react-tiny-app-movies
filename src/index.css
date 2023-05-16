@@ -28,3 +28,13 @@ nav{
     right: 1.5rem;
 }
 
+.search-btns>label {
+    font-size: .8rem;
+    margin-left: 1rem;
+}
+
+.search-type {
+    color: #795548;
+    font-weight: bold;
+}
+

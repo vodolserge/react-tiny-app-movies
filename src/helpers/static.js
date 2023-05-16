@@ -6,6 +6,12 @@
  * Api URL.
  * @type {string}
  */
-const apiUrl = 'http://www.omdbapi.com/?apiKey=abdd4018';
+const apiUrl = `http://www.omdbapi.com/?apiKey=${process.env.REACT_APP_API_KEY}`;
 
-export {apiUrl};
+/**
+ * Default search needle.
+ * @type {string}
+ */
+const defaultSearchNeedle = 'Simpsons';
+
+export {apiUrl, defaultSearchNeedle};

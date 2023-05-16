@@ -1,5 +1,5 @@
 import React from "react";
-import {apiUrl} from "../helpers/static";
+import {apiUrl, defaultSearchNeedle as DEFAULT_SEARCH} from "../helpers/static";
 import MoviesList from "../components/MoviesList";
 import Preloader from "../components/Preloader";
 import Search from "../components/Search";
@@ -10,38 +10,35 @@ import Search from "../components/Search";
  * @constructor
  */
 class Main extends React.Component {
-    DEFAULT_MOVIE = 'Matrix';
-
     state = {
         movies: [],
         responseError: '',
+        loading: false,
     };
 
     componentDidMount() {
-        this.searchMovies(this.DEFAULT_MOVIE);
+        this.searchMovies(DEFAULT_SEARCH);
     }
 
-    searchMovies = (search) => {
-        this.setState({responseError: ''});
+    searchMovies = (search, type = 'all') => {
+        if (!search) search = DEFAULT_SEARCH;
 
         (async () => {
+            this.setState({loading: true})
             try {
-                const data = await this.fetchData(`${apiUrl}&s=${search}`);
-                if (data.hasOwnProperty('Response') && 'False' === data.Response) {
-                    this.setState({responseError: 'Cannot find any movie!'});
-                }
-
+                const data = await this.fetchData(`${apiUrl}&s=${search}${type !== 'all' ? `&type=${type}` : ''}`);
                 this.setState({movies: data['Search']})
             } catch (err) {
-                console.log("Aga!",err);
                 this.setState({responseError: err})
             }
+
+            this.setState({loading: false})
         })();
     }
 
     render () {
-        const {movies} = this.state ;
-        let content = movies && movies.length ? (<MoviesList movies={movies}/>) : <Preloader/>;
+        const {movies, loading } = this.state;
+        let content = loading ? <Preloader/> : (<MoviesList movies={movies}/>);
 
         if (this.state.responseError) {
             content = <p>Sorry! We cannot find any movie!</p>
