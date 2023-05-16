@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/github.io/react-tiny-app-movies/static/css/main.bbe859cb.css",
+    "main.js": "/github.io/react-tiny-app-movies/static/js/main.365ba43b.js",
+    "index.html": "/github.io/react-tiny-app-movies/index.html",
+    "main.bbe859cb.css.map": "/github.io/react-tiny-app-movies/static/css/main.bbe859cb.css.map",
+    "main.365ba43b.js.map": "/github.io/react-tiny-app-movies/static/js/main.365ba43b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbe859cb.css",
+    "static/js/main.365ba43b.js"
+  ]
+}
