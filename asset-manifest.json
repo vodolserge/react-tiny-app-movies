@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-tiny-app-movies/static/css/main.336483ca.css",
-    "main.js": "/react-tiny-app-movies/static/js/main.45f188f9.js",
+    "main.css": "/react-tiny-app-movies/static/css/main.dce0f135.css",
+    "main.js": "/react-tiny-app-movies/static/js/main.eeb84afd.js",
     "index.html": "/react-tiny-app-movies/index.html",
-    "main.336483ca.css.map": "/react-tiny-app-movies/static/css/main.336483ca.css.map",
-    "main.45f188f9.js.map": "/react-tiny-app-movies/static/js/main.45f188f9.js.map"
+    "main.dce0f135.css.map": "/react-tiny-app-movies/static/css/main.dce0f135.css.map",
+    "main.eeb84afd.js.map": "/react-tiny-app-movies/static/js/main.eeb84afd.js.map"
   },
   "entrypoints": [
-    "static/css/main.336483ca.css",
-    "static/js/main.45f188f9.js"
+    "static/css/main.dce0f135.css",
+    "static/js/main.eeb84afd.js"
   ]
 }
