@@ -1,6 +1,6 @@
-/**
+/**************************
  * App helpers.
- */
+ *************************/
 
 /**
  * Api URL.
@@ -14,4 +14,16 @@ const apiUrl = `https://www.omdbapi.com/?apiKey=${process.env.REACT_APP_API_KEY}
  */
 const defaultSearchNeedle = 'Simpsons';
 
-export {apiUrl, defaultSearchNeedle};
+/**
+ * Project repository
+ * @type {string}
+ */
+const repo = 'https://github.com/vodolserge/react-tiny-app-movies/tree/release_23.3';
+
+/**
+ * React library link.
+ * @type {string}
+ */
+const reactLibrary = 'https://react.dev/';
+
+export {apiUrl, defaultSearchNeedle, repo, reactLibrary};

@@ -1,3 +1,5 @@
+import {repo} from "../helpers/static"
+
 /**
  *  Main `Footer` component.
  *
@@ -9,7 +11,7 @@ function Header () {
             <div className="footer-copyright">
                 <div className="container">
                     © {new Date().getFullYear()} Copyright Text
-                    <a className="grey-text text-lighten-4 right" href="#!">Repo</a>
+                    <a className="grey-text text-lighten-4 right" href={repo} target="_blank" rel="noreferrer">Repo</a>
                 </div>
             </div>
         </footer>
